@@ -1,3 +1,3 @@
-Difference between memcpy and memmove
+Difference between memcpy and memmove (USEFUL when the source and destination buffers are the same)
 
 http://www.codepolice.org/c/memcpy.html
