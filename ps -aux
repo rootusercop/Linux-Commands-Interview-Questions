@@ -1,0 +1,40 @@
+
+
+In Linux the command:
+
+ps -aux
+
+Means show 'all processes for all users'. You might be wondering what the x means? The x is a specifier that means 'any of the users'. So you could type this:
+
+ps -auroot
+
+Which displays all the root processes, or
+
+ps -auel
+
+which displays all the processes from user el. The technobabble in the 'man ps' page is: "ps -aux prints all processes owned by a user named 'x' as well as printing all processes that would be selected by the -a option.
+
+
+
+
+$ ps aux  
+USER       PID  %CPU %MEM  VSZ RSS     TTY   STAT START   TIME COMMAND
+timothy  29217  0.0  0.0 11916 4560 pts/21   S+   08:15   0:00 pine  
+root     29505  0.0  0.0 38196 2728 ?        Ss   Mar07   0:00 sshd: can [priv]   
+can      29529  0.0  0.0 38332 1904 ?        S    Mar07   0:00 sshd: can@notty  
+
+USER = user owning the process
+PID = process ID of the process
+%CPU = It is the CPU time used divided by the time the process has been running.
+%MEM = ratio of the process’s resident set size to the physical memory on the machine
+VSZ = virtual memory usage of entire process
+RSS = resident set size, the non-swapped physical memory that a task has used
+TTY = controlling tty (terminal)
+STAT = multi-character process state
+START = starting time or date of the process
+TIME = cumulative CPU time
+COMMAND = command with all its arguments
+
+See the ps man page for more info.
+
+More Info -> http://www.cyberciti.biz/faq/kill-process-in-linux-or-terminate-a-process-in-unix-or-linux-systems/
