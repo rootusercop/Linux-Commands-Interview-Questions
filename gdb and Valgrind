@@ -1,3 +1,25 @@
-GDB -> https://ccrma.stanford.edu/~jos/stkintro/Useful_commands_gdb.html
-    -> https://www.youtube.com/playlist?list=PLATr4Ip40Bjb-2TibVNN63H1CmOIAHsai
-Valgrind -> https://docs.google.com/a/ncsu.edu/document/d/157C0BLPCqf2Pvc1ifV5Iy1i0GarGjFZdERaFKCDkjuA/edit
+http://ubuntuforums.org/showthread.php?t=828018
+
+Setting breakpoint in gdb when variable reaches a specific value:
+http://stackoverflow.com/questions/7285529/setting-a-breakpoint-when-variable-reaches-specific-value
+
+http://stackoverflow.com/questions/2520632/how-do-i-jump-to-a-breakpoint-within-gdb
+
+
+WHEN TO USE free in C:
+http://stackoverflow.com/questions/13590812/c-freeing-structs
+
+
+
+Complete Command:
+valgrind --tool=memcheck --leak-check=full --track-origins=yes --show-reachable=yes ./final --basic input-large.nikhil.bin sort-large.nikhil.bin > SORT-large.txt
+
+
+valgrind --tool=memcheck --leak-check=full --track-origins=yes --show-reachable=yes ./assn_4 index.bin 4 < input-01.txt > output-01.txt
+
+./assn_4 index.bin 4 < input-01.txt > output-01.txt
+
+
+
+
+
